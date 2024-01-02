@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat';
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
@@ -7,12 +7,8 @@ body {
 
 .container {
     max-width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.container img{
-    margin: 0;
+    margin: 0px auto;
+    padding: 0px 20px;
 }
 
 header {
@@ -30,14 +26,12 @@ header h1 {
     font-size: 24px;
     float:left;
 }
-
 .clear_both {
     clear: both;
 }
 nav {
     margin-bottom: 20px;
 }
-
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -47,7 +41,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 nav a {
@@ -55,16 +49,25 @@ nav a {
     text-decoration: none;
 }
 
+
 .hero {
     position: relative;
     text-align: center;
     color: white;
-    padding: 50px 0;
+    padding: 0px 0px;
+    margin:0;
 }
-
+.hero h2{
+    font-size: 60px;
+    text-shadow: 2px 2px 5px black;
+}
+.hero p{
+    font-size: 30px;
+    text-shadow: 2px 2px 5px black;
+}
 .hero img {
     width: 100%;
-    height: auto;
+    height: 100vh;
 }
 
 .hero-text {
