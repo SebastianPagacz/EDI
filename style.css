@@ -76,7 +76,47 @@ nav a {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+.icons{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+}
+.icon1{
+    float:left;
+    width: 33%;
+}
+.icon1 p{
+    font-size: 30px;
+    font-weight: 500;
+}
+.fishing {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.fishing h2{
+    font-size: 30px;
+}
+.fishing p{
+    padding-left:50px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.fishing2 {
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+}
+.fishing2 h2{
+    padding-left: 400px;
+    font-size: 30px;
+}
+.fishing2 p{
+    padding-left:460px;
+    padding-right:50px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+}
 .featured-products {
     background-color: white;
     padding: 40px 0;
@@ -113,7 +153,6 @@ footer {
     width: 100%;
     text-align: center;
 }
-
 /*-- Podstrona autorzy --*/
 .autorzy_sekcja{
     height: 70vh;
