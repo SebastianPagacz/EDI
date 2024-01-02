@@ -113,3 +113,28 @@ footer {
     width: 100%;
     text-align: center;
 }
+
+/*-- Podstrona autorzy --*/
+.autorzy_sekcja{
+    height: 70vh;
+    width: auto;
+    padding-top: 10%;
+}
+
+table.customTable {
+    width: 90%;
+    background-color: #FFFFFF;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #7EA8F8;
+    border-style: solid;
+    color: #000000;
+    margin: auto;
+  }
+  
+table.customTable td, table.customTable th {
+    border-width: 2px;
+    border-color: #7EA8F8;
+    border-style: solid;
+    padding: 5px;
+  }
