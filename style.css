@@ -6,22 +6,35 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
+}
+.container img{
+    margin: 0;
 }
 
 header {
     background-color: #333;
     color: white;
     padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
 }
 
 header h1 {
-    margin: 0;
+    margin-top: -7px;
     font-size: 24px;
+    float:left;
 }
-
+.clear_both {
+    clear: both;
+}
+nav {
+    margin-bottom: 20px;
+}
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -39,10 +52,6 @@ nav a {
     text-decoration: none;
 }
 
-.cart {
-    float: right;
-    line-height: 30px;
-}
 
 .hero {
     position: relative;
@@ -95,9 +104,7 @@ nav a {
 footer {
     background-color: #333;
     color: white;
-    text-align: center;
     padding: 15px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    text-align: center;
 }
