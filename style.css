@@ -10,6 +10,7 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
 .container img{
     margin: 0;
 }
@@ -29,12 +30,14 @@ header h1 {
     font-size: 24px;
     float:left;
 }
+
 .clear_both {
     clear: both;
 }
 nav {
     margin-bottom: 20px;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -51,7 +54,6 @@ nav a {
     color: white;
     text-decoration: none;
 }
-
 
 .hero {
     position: relative;
