@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep Wędkarski</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Sklep Wędkarski</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Strona Główna</a></li>
+                    <li><a href="#">Produkty</a></li>
+                    <li><a href="#">Oferty Specjalne</a></li>
+                    <li><a href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="#" id="cart-button">Koszyk (0)</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <img src="fishing.jpg" alt="Wędkarz na łodzi">
+            <div class="hero-text">
+                <h2>Wędkarstwo to nasza pasja!</h2>
+                <p>Znajdź najlepsze sprzęty w naszym sklepie wędkarskim.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="container">
+            <h2>Nasze Produkty</h2>
+            <div class="product">
+                <img src="rod.jpg" alt="Wędka">
+                <p>Wędka Morska</p>
+                <p class="price">$49.99</p>
+                <button class="add-to-cart" onclick="addToCart('Wędka Morska', 49.99)">Dodaj do koszyka</button>
+            </div>
+            <div class="product">
+                <img src="reel.jpg" alt="Kołowrotek">
+                <p>Kołowrotek Profesjonalny</p>
+                <p class="price">$29.99</p>
+                <button class="add-to-cart" onclick="addToCart('Kołowrotek Profesjonalny', 29.99)">Dodaj do koszyka</button>
+            </div>
+            <!-- Dodaj więcej produktów według potrzeb -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sklep Wędkarski. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
