@@ -177,3 +177,9 @@ table.customTable td, table.customTable th {
     border-style: solid;
     padding: 5px;
   }
+ /*-- Podstrona z API --*/
+ .api_sekcja{
+    height: 70vh;
+    width: auto;
+    padding-top: 10%;
+}
