@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Group data by fish type and calculate total lenght and count for each type
         const groupedData = data.reduce((acc, item) => {
           const fishType = item.Fish;
-          const Lenght = item.Lenght || 0; // Assuming Lenght is a numeric property
+          const Lenght = item.Lenght || 0;
   
           if (!acc[fishType]) {
             acc[fishType] = { totalLenght: 0, count: 0 };
@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
               datasets: [{
                 label: 'Średnia długość ryby: ',
                 data: values,
-                backgroundColor: 'rgba(221, 158, 205, 0.2)', // Adjust color as needed
-                borderColor: 'rgba(221, 158, 205, 1)',     // Adjust color as needed
+                backgroundColor: 'rgba(221, 158, 205, 0.2)',
+                borderColor: 'rgba(221, 158, 205, 1)',
                 borderWidth: 1
               }]
             },
