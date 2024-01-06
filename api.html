@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep Wędkarski</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="api.js"></script>
+    <script src="chart.js"></script>
+    <script src="chart2.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1><strong><a href="index.html">Sklep Wędkarski</a></strong></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="autorzy.html">Autorzy</a></li>
+                    <li><a href="api.html">Zawody 2023</a></li>
+                </ul>
+            </nav>
+            <div class = "clear_both"></div>
+        </div>
+    </header>
+    <section class="dane"></section>
+    <center><h2>Wyniki zawodów</h2></center>
+    <div class="dane1">
+        <center><canvas id="myChart" width="400" height="200"></canvas></center><br>
+        </div>
+    </div>
+    <div class="dane2">
+        <center><canvas id="myChart2" width="400" height="200"></canvas></center><br>
+    </div>
+    <div class="clear_both"></div>
+    <div class="dane3">
+        <center><div class="container mt-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Data Table -->
+                    <div class="table-responsive table-container">
+                        <!-- The table will be appended here -->
+                    </div>
+                </div>
+            </div>
+        </center>
+        <br><br><br><br>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sklep Wędkarski. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
