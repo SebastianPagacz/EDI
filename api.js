@@ -1,20 +1,38 @@
-$.getJSON( "https://my.api.mockaroo.com/wedkowanie.json?key=afaaf6d0", function( data ) {
-            var items = [];
-            $.each( data, function( key, val ) {
-            items.push( "<tr id='" + key+ "'>" );
-            items.push("<th>" + val['id'] + "</th>")
-            items.push("<th>" + val['Full_name'] + "</th>")
-            items.push("<th>" + val['Phone_number'] + "</th>")
-            items.push("<th>" + val['Birthdate'] + "</th>")
-            items.push("<th>" + val['gender'] + "</th>")
-            items.push("<th>" + val['Fish'] + "</th>")
-            items.push("<th>" + val['Lenght'] + "</th>")
-            items.push("<th>" + val['Weight'] + "</th>")
-            items.push("<th>" + val['Fishing_License'] + "</th>")
-            items.push("</tr>")
-            });
-            
-            $( "<table/>", {
-            html: items.join( "" )
-            }).appendTo("div");
+$(document).ready(function () {
+    $.getJSON("https://my.api.mockaroo.com/wedkowanie.json?key=afaaf6d0", function (data) {
+        var items = [];
+
+        // Header row
+        items.push("<tr>");
+        items.push("<th >ID</th>");
+        items.push("<th>Imię</th>");
+        items.push("<th>Numer tel.</th>");
+        items.push("<th>Data ur.</th>");
+        items.push("<th>Płeć</th>");
+        items.push("<th>Gatunek</th>");
+        items.push("<th>Długość</th>");
+        items.push("<th>Waga</th>");
+        items.push("<th>Karta Wędkarska</th>");
+        items.push("</tr>");
+
+        // Data rows
+        $.each(data, function (key, val) {
+            items.push("<tr>");
+            items.push("<td>" + val['id'] + "</td>");
+            items.push("<td>" + val['Full_name'] + "</td>");
+            items.push("<td>" + val['Phone_number'] + "</td>");
+            items.push("<td>" + val['Birthdate'] + "</td>");
+            items.push("<td>" + val['gender'] + "</td>");
+            items.push("<td>" + val['Fish'] + "</td>");
+            items.push("<td>" + val['Lenght'] + "</td>");
+            items.push("<td>" + val['Weight'] + "</td>");
+            items.push("<td>" + val['Fishing_License'] + "</td>");
+            items.push("</tr>");
         });
+
+        $("<table/>", {
+            "class": "table table-bordered table-striped",
+            html: items.join("")
+        }).appendTo(".table-container");
+    });
+});
