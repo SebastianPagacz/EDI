@@ -1,4 +1,5 @@
 body {
+    scroll-behavior: smooth;
     font-family: 'Montserrat';
     margin: 0;
     padding: 0;
@@ -117,34 +118,8 @@ nav a {
     line-height: 30px;
     text-align: left;
 }
-.featured-products {
-    background-color: white;
-    padding: 40px 0;
-}
 
-.product {
-    margin: 20px;
-    text-align: center;
-}
 
-.product img {
-    width: 100%;
-    height: auto;
-}
-
-.price {
-    color: #007bff;
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.add-to-cart {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-}
 
 footer {
     background-color: #333;
@@ -182,4 +157,50 @@ table.customTable td, table.customTable th {
     height: 70vh;
     width: auto;
     padding-top: 10%;
+}
+.dane {
+    padding-top: 120px;
+}
+.dane1 {
+    float: left;
+    width: 30%;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 4%;
+}
+.dane2 {
+    float: left;
+    width: 70%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+a:link {
+    color: white;
+    text-decoration: none;
+    transition: 0.7s;
+}
+a:visited {
+    color: white;
+}
+a:active {
+    color: white;
+}
+a:hover {
+    color: gray;
+}
+button {
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(233, 140, 0);
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.7s;
+}
+button:hover {
+    background-color: rgb(181, 109, 1);
+    cursor: pointer;
 }
