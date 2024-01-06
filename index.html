@@ -13,12 +13,12 @@
 <body>
     <header>
         <div class="container">
-            <h1>Sklep Wędkarski</h1>
+            <h1><a href="index.html">Sklep Wędkarski</a></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Strona Główna</a></li>
                     <li><a href="autorzy.html">Autorzy</a></li>
-                    <li><a href="api_strona.html">API</a></li>
+                    <li><a href="api.html">Zawody 2023</a></li>
                 </ul>
             </nav>
             <div class = "clear_both"></div>
@@ -30,9 +30,11 @@
             <div class="hero-text">
                 <h2>Wędkarstwo to nasza pasja!</h2>
                 <p>Znajdź najlepsze sprzęty w naszym sklepie wędkarskim.</p>
+                <button onclick="scrollToSection('scroll')">Dowiedz się więcej!</button>
         </div>
     </section>
     <section class="icons">
+        <div id="scroll"></div>
         <div class="icon1"><center><img src="fast-delivery.png" alt=""><p>Szybka dostawa!</p></center></div>
         <div class="icon1"><center><img src="positive-review.png" alt=""><p>Pozytywne opinie!</p></center></div>
         <div class="icon1"><center><img src="high-quality.png" alt=""><p>Wysoka jakość!</p></center></div>
@@ -70,19 +72,21 @@
             To pasja, którą warto pielęgnować i rozwijać.</p>
     </section>
     <section class="fishing">
-        <h2>Dlaczego warto wędkować?</h2>
+        <h2>Wędkarstwo w Polsce</h2>
         <p>
-            Wędkowanie to nie tylko hobby, ale również sposób na znalezienie ukojenia w zgiełku codziennego życia. <br>
-            To aktywność, która łączy ludzi z naturą i oferuje liczne korzyści fizyczne i psychiczne.<br>
-            Po pierwsze, wędkowanie to doskonała okazja do relaksu i odpoczynku na świeżym powietrzu.<br>
-            Obserwacja malowniczych krajobrazów jezior, rzek czy morza sprawia, że stres dnia codziennego znika, zastępowany spokojem wodnych otoczeń.<br>
-            Ponadto, wędkowanie rozwija cierpliwość i skupienie, ponieważ sukces często zależy od umiejętności obserwacji i zrozumienia ruchów ryb.<br>
-            To także doskonały sposób na aktywność fizyczną, zwłaszcza gdy wędkowanie obejmuje spacery wzdłuż brzegu czy korzystanie z łodzi.<br>
-            Ruch na świeżym powietrzu przyczynia się do poprawy kondycji fizycznej.<br>
-            Warto również podkreślić, że wędkowanie umożliwia budowanie relacji międzyludzkich.<br>
-            Wyjścia na ryby z rodziną czy przyjaciółmi sprzyjają wspólnym chwilom, dzieleniu się wrażeniami i nawiązywaniu głębszych więzi.<br>
-            Wędkowanie to nie tylko zdobywanie ryb, lecz również doświadczenie pełne pozytywnych emocji, które warto wprowadzić do swojego życia.<br>
-            Niezależnie od wieku czy doświadczenia, warto oddać się tej fascynującej pasji i czerpać radość z prostych przyjemności natury.</p>
+            Wędkarstwo w Polsce cieszy się długą tradycją i ogromną popularnością, przyciągając zarówno entuzjastów rybactwa, <br>
+            jak i tych, którzy pragną spędzić czas na świeżym powietrzu. Znajdując się w samym sercu Europy, <br>
+            Polska oferuje bogactwo wód śródlądowych, od rzek i jezior po strumienie i stawy,<br>
+             co czyni kraj doskonałym miejscem dla miłośników wędkarstwa.<br>
+            Najpopularniejszymi gatunkami ryb w Polsce są szczupak, karp, pstrąg, sandacz i leszcz. Polskie jeziora, takie jak<br>
+            Jezioro Łebsko czy Jezioro Mamry, przyciągają wędkarzy z różnych regionów kraju i zagranicy.  <br>
+            Wędkarze mogą również cieszyć się malowniczymi rzekami, takimi jak Wisła czy Biebrza, oferującymi wyjątkowe doświadczenia wędkarskie. <br>
+            Polska Federacja Wędkarska troszczy się o rozwój tej pasjonującej dziedziny, organizując liczne zawody, szkolenia
+            i wydarzenia społecznościowe. <br> Liczba wędkarzy w Polsce stale rośnie, co przyczynia się do zwiększenia świadomości ekologicznej
+            i zrównoważonego zarządzania zasobami wodnymi. <br>
+            Wędkarstwo nie tylko dostarcza przyjemności z połowu, ale również sprzyja relaksowi i kontaktowi z przyrodą. <br>
+            W Polsce, gdzie woda stanowi integralną część krajobrazu, wędkarstwo staje się ważnym elementem kultury, łącząc ludzi z
+            naturą i tradycją.</p>
     </section>
     </section>
 
@@ -91,6 +95,12 @@
             <p>&copy; 2024 Sklep Wędkarski. Wszelkie prawa zastrzeżone.</p>
         </div>
     </footer>
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 
 </html>
