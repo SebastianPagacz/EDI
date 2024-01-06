@@ -41,8 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 position: 'top',
               },
               title: {
-                display: true,
-                text: 'Konkurs łowiecki'
+                display: false,
               }
             }
           },
